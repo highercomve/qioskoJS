@@ -156,6 +156,20 @@
 .canal_title a{
 	color: #ddd;
 }
+
+.tools{
+    background-color: white;
+    height: 260px;
+    margin-right: -375px;
+    padding: 10px;
+    position: fixed;
+    right: 50%;
+    top: 50px;
+    width: 65px;
+}
+.tools .googlemasuno { margin: 10px 8px; }
+.tools .twitter {  }
+.tools .facebook { position: relative;left: 8px; }
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
  *
