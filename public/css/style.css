@@ -137,6 +137,9 @@
 .detail_content p{
 	font-size:14px;
 }
+.clearfix{
+	clear: both;
+}
 .entries {
 	padding: 10px 5px;
 }
@@ -287,10 +290,10 @@
 	height:300px;
 	float:left;
 	display:block;
-}
+}/*
 .es-carousel ul li a{
 	display:block;
-}
+}*/
 .es-carousel ul li a img{
 	display:block;
 	border:none;

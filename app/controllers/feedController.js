@@ -33,9 +33,9 @@ var feedController={
 		var template = new EJS({url:'app/views/detail.ejs'});
 		var renderizado=template.render(content);
 		$('#detail').html(renderizado);
-		$('.detail').jScrollPane();
 		$('#over').show();
 		$('.detail').slideDown('medium');
+		$('.detail').jScrollPane({autoReinitialise: true});
 		$('#over').click(function(){
 			setHashSilently(category);
 			$('.article').hide();
