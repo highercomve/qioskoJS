@@ -14,9 +14,25 @@ var feedController={
 		localStorage.removeItem('feed_temp');
 		var allfeeds={feed:new Array()};
 		for (var i=0,len=category.values.length; i<len; i++) {
-			var test_feed=getFeed(category.values[i].url,i,name);
+			getFeed(category.values[i].url,name);
+			setInterval(function(){},500);
 		};
 		
+	},
+	renderCategory:function(result,cat){
+		var template = new EJS({url:'app/views/feeds.ejs'});
+		console.log('renderCategory');
+		console.log({category:cat,result:result});
+		var renderizado=template.render({category:cat,result:result});
+		$('#content').append(renderizado);
+		for (var i = 0,len=result.length; i<len; i++) {
+			$('#carousel_'+i).elastislide({
+				imageW 		: 300,
+				minItems	: 3,
+				margin		: 2,
+				border		: 0
+			});
+		};
 	},
 	showDetail:function(category,site,id){
 		if (typeof(result)=='undefined' && typeof(content)=='undefined') {

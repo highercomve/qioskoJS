@@ -5,7 +5,8 @@ function setHashSilently(hash){
 }
 
 $(document).ready(function(){
-	localStorage.removeItem('feed_temp');
+	//localStorage.removeItem('feed_temp');
+	localStorage.clear();
 	crossroads.addRoute('{id}',function(id){
 		feedController.showCategory(id);
 	});

@@ -19,7 +19,7 @@
 #main_nav{ float:right; margin-top:0; width:600px;height:50px}
 	#main_nav .nav {   margin:0;   padding:0;  height:50px;    list-style:none; width:100%;}
 	#main_nav .nav li {float:right; margin:0;}
-	#main_nav .nav li a{ border:#355a56 1px solid;   line-height:27px;   height:27px;    display:block;  background-color:#272a23;   color:#58b2b2; text-decoration:none; width:92px; text-align:center; font-family: 'Geo', arial, serif;   font-size:13px;     margin:0;  }
+	#main_nav .nav li a{ border:#355a56 1px solid;   line-height:27px;   height:27px;    display:block;  background-color:#272a23;   color:#58b2b2; text-decoration:none; width:92px; text-align:center; font-family: 'Geo', arial, serif;   font-size:15px;     margin:0;  }
 	#main_nav .nav li a:hover {background-color:#58b2b2;   color:#FFF; }
 /* Menu Principal */
 .img-noticias {	width:280px;}

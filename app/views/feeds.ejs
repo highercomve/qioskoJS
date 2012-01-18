@@ -1,25 +1,29 @@
-<div class="canal" id="canal_<%= id %>">	
-<h2 class="canal_title"><%= link_to(feed.title, feed.link) %></h2>
-<div id="canales_<%= id %>">
-	<div id="carousel_<%= id %>" class="es-carousel-wrapper">
-		<div class="es-carousel">
-			<ul>
-			<% for(var i=0,len=feed.entries.length; i<len; i++) {%>
-				<li>
-					<div class="entries" id="entrie_<%= i %>">
-					<h3>
-						<%= link_to(feed.entries[i].title,'#detail/'+category+'/'+id+'/'+i) %><br/>
-						<small><%= feed.entries[i].author %></small>
-					</h3>
-					<p>
-						<%= feed.entries[i].contentSnippet %>
-					</p>
-					</div>
-				</li>
-			<% } %>
-			</ul>
+<% console.log(result.length)%>
+<% for(var y=0,len1=result.length; y<len1; y++) {%>
+	<% console.log(result[y])%>
+	<div class="canal" id="canal_<%= y %>">	
+		<h2 class="canal_title"><%= link_to(result[y].content.feed.title, result[y].content.feed.link) %></h2>
+		<div id="canales_<%= y %>">
+			<div id="carousel_<%= y %>" class="es-carousel-wrapper">
+				<div class="es-carousel">
+				<ul>
+					<% for(var i=0,len=result[y].content.feed.entries.length; i<len; i++) {%>
+
+						<li>
+							<div class="entries" id="entrie_<%= i %>">
+							<h3>
+								<%= link_to(result[y].content.feed.entries[i].title,'#detail/'+category+'/'+y+'/'+i) %><br/>
+								<small><%= result[y].content.feed.entries[i].author %></small>
+							</h3>
+							<p>
+								<%= result[y].content.feed.entries[i].contentSnippet %>
+							</p>
+							</div>
+						</li>
+					<% } %>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-	<span class="next"></span>
-</div>
-</div>
+<% } %>

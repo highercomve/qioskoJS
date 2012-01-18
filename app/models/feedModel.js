@@ -16,7 +16,8 @@ var default_sites=[
 		name:'tecnologia',
 		values:[
 			{title:'Bitelia',url:'http://feeds.hipertextual.com/bitelia'},
-			{title:'Xataka',url:'http://feeds.weblogssl.com/xataka2'}
+			{title:'Xataka',url:'http://feeds.weblogssl.com/xataka2'},
+			{title:'Engadget Espanol',url:'http://feeds.feedburner.com/EngadgetSpanish'}
 		]
 	},
 	{
@@ -101,7 +102,7 @@ var feedModel=function(){
 		return sites;
 	}
 }
-function getFeed(url,guid,category,max,callback){
+function getFeed(url,cat_name,max,callback){
 	max=(typeof(max)=='undefined') ? 50:max;
 	var content=new Array();
 	var rss = new google.feeds.Feed(url);
@@ -113,26 +114,26 @@ function getFeed(url,guid,category,max,callback){
 	    	try{
 	    		if(!localStorage.getObject('feed_temp'))
 				{
-					localStorage.setObject('feed_temp',{feed:result.feed.title,content:result});
-					content.push({feed:result.feed.title,content:result});
+					var temp=new Array();
+					temp.push({feed:result.feed.title,content:result});
+					localStorage.setObject('feed_temp',temp);
 				}
 				else
 				{
-					var temp=localStorage.getObject('feed_temp');
-					content.push(temp);
-					content.push({feed:result.feed.title,content:result});
-					localStorage.setObject('feed_temp',content);
+					var temp=new Array();
+					temp=localStorage.getObject('feed_temp');
+					temp.push({feed:result.feed.title,content:result});
+					localStorage.setObject('feed_temp',temp);
 				}
-				var poraqui=content.length - 1;
-				var template = new EJS({url:'app/views/feeds.ejs'});
-				var renderizado=template.render({id:poraqui,category:category,feed:result.feed});
-				$('#content').append(renderizado);
-				$('#carousel_'+poraqui).elastislide({
-					imageW 		: 300,
-					minItems	: 3,
-					margin		: 2,
-					border		: 0
-				});
+				console.log(temp);
+				feeds=new feedModel();
+				var category=feeds.readCategory(cat_name);
+				if(temp.length==category.values.length){
+					feedController.renderCategory(temp,cat_name);
+				}
+				else{
+					console.log('Error no mando ha hacer render '+temp.length+'<>'+category.values.length);
+				}
 			}
 			catch(e) {
 				console.log(e);
@@ -141,6 +142,7 @@ function getFeed(url,guid,category,max,callback){
 	    }
 	    else
 	    {
+	    	console.log(result.error);
 	    	return false;
 	    }
     });
