@@ -15,7 +15,7 @@
     padding: 0 20px 12px;
 }
 /* Menu Principal */
-#main_nav{ float:right; margin-top:0; width:400px;height:50px}
+#main_nav{ float:right; margin-top:0;height:50px}
 	#main_nav .nav {   margin:0;   padding:0;  height:50px;    list-style:none; width:100%;}
 	#main_nav .nav li {float:right; margin:0;}
 	#main_nav .nav li a{ border:#355a56 1px solid;   line-height:27px;   height:27px;    display:block;  background-color:#272a23;   color:#58b2b2; text-decoration:none; width:92px; text-align:center; font-family: 'Geo', arial, serif;   font-size:15px;     margin:0;  }
@@ -168,9 +168,9 @@
     width: 65px;
     overflow: visible;
 }
-.tools .googlemasuno { margin: 10px 8px;display: block; }
+.tools .googlemasuno { margin: 10px 8px;display: block; position: relative; z-index: 300;}
 .tools .twitter { display: block; }
-.tools .facebook { position: relative;left: 8px; display: block;}
+.tools .facebook { position: relative;left: 8px; display: block; z-index: 200;}
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
  *

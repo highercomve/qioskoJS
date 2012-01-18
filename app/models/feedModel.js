@@ -17,14 +17,57 @@ var default_sites=[
 		values:[
 			{title:'Bitelia',url:'http://feeds.hipertextual.com/bitelia'},
 			{title:'Xataka',url:'http://feeds.weblogssl.com/xataka2'},
-			{title:'Engadget Espanol',url:'http://feeds.feedburner.com/EngadgetSpanish'}
+			{title:'Engadget Espanol',url:'http://feeds.feedburner.com/EngadgetSpanish'},
+			{title:'Alt1040',url:'http://feeds.hipertextual.com/alt1040'},
+			{title:'Xataka Movil',url:'http://feeds.weblogssl.com/xatakamovil'},
+			{title:'Guizmodo.es',url:'http://feeds.feedburner.com/es/gizmodo'},
+			{title:'Fayerwayer',url:'http://feeds.feedburner.com/fayerwayer'},
+			{title:'Conecti.ca',url:'http://feeds.feedburner.com/feedconectica'},
+			{title:'Genbeta',url:'http://feeds.weblogssl.com/genbeta'},
+			{title:'Androidve',url:'http://androidve.com/feed/'}
 		]
 	},
 	{
 		name:'venezuela',
 		values:[
 			{title:'La Patilla',url:'http://feeds.feedburner.com/lapatilla'},
-			{title:'6to Poder',url:'http://www.6topoder.com/feed/'}
+			{title:'6to Poder',url:'http://www.6topoder.com/feed/'},
+			{title:'Noticias 24',url:'http://www.noticias24.com/actualidad/feed/'},
+			{title:'Noticiero Digital',url:'http://www.noticierodigital.com/feed/'},
+			{title:'El Universal',url:'http://www.eluniversal.com/rss/avances.xml'},
+			{title:'Diario la Verdad',url:'http://feeds.feedburner.com/diariolaverdad'},
+			{title:'Tal Cual Digital',url:'http://www.talcualdigital.com/rss/TalCualDigital_avances.xml'}
+		]
+	},
+	{
+		name:'regionales',
+		values:[
+			{title:'El Impulso',url:'http://www.elimpulso.com/rss/feed.php?feeds=Todos&enviar=Buscar'},
+			{title:'La Verdad de Monagas',url:'http://www.laverdaddemonagas.com/?format=feed&type=rss'},
+			{title:'Notidiario',url:'http://www.notidiario.com.ve/index.php?format=feed&type=rss'},
+			{title:'Noticia al dia',url:'http://feeds2.feedburner.com/NoticiaAlDia'},
+			{title:'El Tiempo',url:'http://eltiempo.com.ve/rss/global'}
+		]
+	},
+	{
+		name:'deportes',
+		values:[
+			{title:'Sin Uniforme',url:'http://sinuniforme.com/feed'},
+			{title:'Jonron',url:'http://www.jonron.com/sitio/feed/'},
+			{title:'El Informador',url:'http://www.elinformador.com.ve/rss/deportes'},
+			{title:'Ultimas Noticias Deportes',url:'http://www.ultimasnoticias.com.ve/CMSPages/RSS/Un/Deportes.aspx'},
+			{title:'As',url:'http://www.as.com/rss.html'}
+		]
+	},
+	{
+		name:'internacionales',
+		values:[
+			{title:'El Pais',url:'http://www.elpais.com/rss/feed.html?feedId=1022'},
+			{title:'Emol',url:'http://rss.emol.com/rss.asp?canal=0'},
+			{title:'El Tiempo',url:'http://www.eltiempo.com/mundo/latinoamerica/rss.xml'},
+			{title:'El Nuevo Erald',url:'http://www.elnuevoherald.com/primera-plana/index.xml'},
+			{title:'El Universal',url:'http://www.eluniversal.com.mx/rss/notashome.xml'},
+			{title:'Clarin',url:'http://clarin.feedsportal.com/c/33088/f/577681/index.rss'},
 		]
 	}
 ];

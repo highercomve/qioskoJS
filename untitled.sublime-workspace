@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"z",
+				"z	z-index: index"
+			],
+			[
+				"Uni",
+				"Universal"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"marin",
+				"margin	margin: all"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
 				"for",
 				"for	for (…) {…}"
 			],
@@ -26,10 +46,6 @@
 			[
 				"over",
 				"overflow	overflow: type"
-			],
-			[
-				"z",
-				"z-index"
 			],
 			[
 				"le",
@@ -104,18 +120,26 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "app/models/feedModel.js",
 			"settings":
 			{
-				"buffer_size": 2331,
+				"buffer_size": 5841,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/feedController.js",
+			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 1683,
+				"buffer_size": 7952,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "qiosko.js",
+			"settings":
+			{
+				"buffer_size": 1250,
 				"line_ending": "Unix"
 			}
 		}
@@ -144,16 +168,21 @@
 	},
 	"file_history":
 	[
-		"/home/sergio/Desktop/qiosko/qiosko.js",
+		"/home/sergio/Desktop/qioskoJS/app/models/feedModel.js",
+		"/home/sergio/Desktop/qiosko/app/controllers/feedController.js",
+		"/home/sergio/Desktop/qiosko/app/views/detail.ejs",
+		"/home/sergio/Desktop/qiosko/index.html",
 		"/home/sergio/Desktop/qiosko/public/css/style.css",
+		"/home/sergio/Desktop/qioskoChrome/index.html",
+		"/home/sergio/Desktop/qiosko/public/css/bootstrap.css",
+		"/home/sergio/Desktop/qioskoChrome/app/controllers/feedController.js",
+		"/home/sergio/Desktop/qiosko/qiosko.js",
 		"/home/sergio/Desktop/qiosko/app/models/feedModel.js",
 		"/home/sergio/Desktop/qiosko/app/views/menu.ejs",
-		"/home/sergio/Desktop/qiosko/app/views/detail.ejs",
 		"/home/sergio/Desktop/qiosko/app/views/feeds.ejs",
 		"/home/sergio/Desktop/qiosko/core/jquery.elastislide.js",
 		"/home/sergio/Desktop/qiosko/core/jquery.liquidcarousel.min.js",
 		"/home/sergio/Desktop/qiosko/core/mwheelIntent.js",
-		"/home/sergio/Desktop/qiosko/public/css/bootstrap.css",
 		"/home/sergio/Desktop/qiosko/codigos qiosko viejo2.html",
 		"/home/sergio/Desktop/qiosko/codigos qiosko viejo.html",
 		"/home/sergio/Desktop/qiosko/app/models/feeds.js",
@@ -203,51 +232,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "app/models/feedModel.js",
 					"settings":
 					{
-						"buffer_size": 2331,
+						"buffer_size": 5841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								520,
-								520
-							]
-						],
-						"settings":
-						{
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/feedController.js",
-					"settings":
-					{
-						"buffer_size": 1683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1350,
-								1350
+								3037,
+								3037
 							]
 						],
 						"settings":
@@ -256,7 +257,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 340.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/css/style.css",
+					"settings":
+					{
+						"buffer_size": 7952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "qiosko.js",
+					"settings":
+					{
+						"buffer_size": 1250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

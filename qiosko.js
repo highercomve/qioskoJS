@@ -19,8 +19,12 @@ $(document).ready(function(){
 	hasher.changed.add(crossroads.parse, crossroads); //parse hash changes
 	hasher.init(); //start listening for history change
 	var menu={enlaces:[
-			{title:'Venezuela',url:'#venezuela'},
-			{title:'Tecnologia',url:'#tecnologia'}
+			
+			{title:'Deportes',url:'#deportes'},
+			{title:'Internacionales',url:'#internacionales'},
+			{title:'Regionales',url:'#regionales'},
+			{title:'Tecnología',url:'#tecnologia'},
+			{title:'Venezuela',url:'#venezuela'}
 	]};
 	try{
 		var template = new EJS({url:'app/views/menu.ejs'});
