@@ -166,10 +166,11 @@
     right: 50%;
     top: 50px;
     width: 65px;
+    overflow: visible;
 }
-.tools .googlemasuno { margin: 10px 8px; }
-.tools .twitter {  }
-.tools .facebook { position: relative;left: 8px; }
+.tools .googlemasuno { margin: 10px 8px;display: block; }
+.tools .twitter { display: block; }
+.tools .facebook { position: relative;left: 8px; display: block;}
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
  *
