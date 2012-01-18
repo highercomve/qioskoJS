@@ -1,0 +1,5 @@
+<% for(var i=0,len=enlaces.length; i<len; i++) {%>
+	<li <% if(is_current_page('index.html'+enlaces[i].url)) {%> class="active" <% } %>>
+		<%= link_to(enlaces[i].title,enlaces[i].url) %>
+	</li>
+<% } %>

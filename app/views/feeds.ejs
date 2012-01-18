@@ -1,0 +1,25 @@
+<div class="c" id="canal_<%= id %>">	
+<h1><%= link_to(feed.title, feed.link) %></h1>
+<div id="canales_<%= id %>">
+	<div id="carousel_<%= id %>" class="es-carousel-wrapper">
+		<div class="es-carousel">
+			<ul>
+			<% for(var i=0,len=feed.entries.length; i<len; i++) {%>
+				<li>
+					<div class="entries" id="entrie_<%= i %>">
+					<h3>
+						<%= link_to(feed.entries[i].title,'#detail/'+category+'/'+id+'/'+i) %><br/>
+						<small><%= feed.entries[i].author %></small>
+					</h3>
+					<p>
+						<%= feed.entries[i].contentSnippet %>
+					</p>
+					</div>
+				</li>
+			<% } %>
+			</ul>
+		</div>
+	</div>
+	<span class="next"></span>
+</div>
+</div>
