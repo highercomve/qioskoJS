@@ -132,15 +132,28 @@
 }
 .detail_content {
 	overflow-x:hidden;
-	margin: 0;
+	margin: 10px 0 0 0;
 }
-
+.detail_content p{
+	font-size:14px;
+}
 .entries {
 	padding: 10px 5px;
 }
 	.entries h3{
 		line-height:1.2em;
 	}
+
+.canal_title {
+	display: inline-block;
+	background: #101010;
+	line-height:2em;
+	font-size:20px;
+	padding: 0 20px;
+}
+.canal_title a{
+	color: #ddd;
+}
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
  *
@@ -261,9 +274,6 @@
 .es-carousel-wrapper{
 	background: #101010;
 	padding:10px 37px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 	position:relative;
 }
 .es-carousel{
@@ -306,4 +316,22 @@
 }
 .es-nav span:hover{
 	opacity:1.0;
+}
+.jfontsize-button {
+    font: bold 12px arial;
+    padding: 3px;
+    border: solid 1px #ccc;
+}
+ 
+.jfontsize-button:hover {
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    border: solid 1px #333;
+}
+ 
+.jfontsize-disabled, .jfontsize-disabled:hover {
+    color: #aaa;
+    border: solid 1px #eee;
+    background: #eee;
 }
