@@ -31,7 +31,7 @@
 	          <a class="brand" href="#venezuela">
 	          	<img src="public/img/qiosko.png" />
 	          </a>
-		  <a href="javascript:location.reload(true);" style="float:left"><img src="http://www.qiosko.net/noticias/global/css/i/actualizar.gif" width="91" height="32" vspace="10"></a>
+		  <a href="javascript:location.reload(true);" style="float:left;margin-top:10px;"><img src="http://www.qiosko.net/noticias/global/css/i/actualizar.gif" width="91" height="32" vspace="10"></a>
 	          <div id="main_nav">
 	          	<ul class="nav" id="main_nav_inner">
 		            <li class="active"><a href="#venezuela">Venezuela</a></li>
