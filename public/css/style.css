@@ -71,7 +71,22 @@ body{background-color:#555;}
 .botones{ float:left; margin-right:10px;}
 
 .titulodepagina{ margin-left:15px; font-family: 'Cuprum', arial, serif; font-size:32px; color:#fff; font-weight:100; width:300px;}
-
+#loading { 
+	background: none repeat scroll 0 0 white;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+#loading img {
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-100px;
+	
+}
 .pub-interarticulos {margin:10px auto;}
 
 #enlace-subir{ position:fixed;bottom:10px;right:10px;z-index:4;}   

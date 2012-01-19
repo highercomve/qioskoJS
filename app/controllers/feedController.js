@@ -18,6 +18,7 @@ function addSocialScript(d,s,id,url){
 };
 var feedController={
 	showCategory:function(name){
+		$('#loading').show();
 		if (typeof(feeds)=='undefined' && typeof(category)=='undefined') {
 			var feeds;
 			var category;
@@ -37,6 +38,7 @@ var feedController={
 		
 	},
 	renderCategory:function(result,cat){
+		$('#loading').hide();
 		var template = new EJS({url:'app/views/feeds.ejs'});
 		console.log('renderCategory');
 		console.log({category:cat,result:result});
@@ -52,6 +54,7 @@ var feedController={
 		};
 	},
 	showDetail:function(category,site,id){
+		$('#loading').show();
 		if (typeof(result)=='undefined' && typeof(content)=='undefined') {
 			var result;
 			var content;
@@ -65,6 +68,7 @@ var feedController={
 		};
 		var template = new EJS({url:'app/views/detail.ejs'});
 		var renderizado=template.render(content);
+		$('#loading').hide();
 		$('#detail').html(renderizado);
 		$('#over').show();
 		$('.detail').slideDown('medium');
