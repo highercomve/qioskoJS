@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding	padding: all"
+			],
+			[
+				"back",
+				"background	background-color: rgb"
+			],
+			[
 				"z",
 				"z	z-index: index"
 			],
@@ -120,26 +128,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/feedModel.js",
-			"settings":
-			{
-				"buffer_size": 5841,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 7952,
+				"buffer_size": 7995,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "qiosko.js",
+			"file": "public/css/bootstrap.css",
 			"settings":
 			{
-				"buffer_size": 1250,
+				"buffer_size": 47362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/detail.ejs",
+			"settings":
+			{
+				"buffer_size": 1111,
 				"line_ending": "Unix"
 			}
 		}
@@ -169,6 +177,9 @@
 	"file_history":
 	[
 		"/home/sergio/Desktop/qioskoJS/app/models/feedModel.js",
+		"/home/sergio/Desktop/qioskoJS/app/views/detail.ejs",
+		"/home/sergio/Desktop/qioskoJS/public/css/style.css",
+		"/home/sergio/Desktop/qioskoJS/qiosko.js",
 		"/home/sergio/Desktop/qiosko/app/controllers/feedController.js",
 		"/home/sergio/Desktop/qiosko/app/views/detail.ejs",
 		"/home/sergio/Desktop/qiosko/index.html",
@@ -207,6 +218,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
 			"entries",
 			"jspVerticalBar",
 			"jspCap",
@@ -232,50 +244,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/feedModel.js",
-					"settings":
-					{
-						"buffer_size": 5841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3037,
-								3037
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 765.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "public/css/style.css",
 					"settings":
 					{
-						"buffer_size": 7952,
+						"buffer_size": 7995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								593,
-								593
+								4207,
+								4207
 							]
 						],
 						"settings":
@@ -283,34 +268,60 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 13.0,
+						"translation.y": 1378.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "qiosko.js",
+					"buffer": 1,
+					"file": "public/css/bootstrap.css",
 					"settings":
 					{
-						"buffer_size": 1250,
+						"buffer_size": 47362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								284,
-								284
+								1778,
+								1778
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/detail.ejs",
+					"settings":
+					{
+						"buffer_size": 1111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 51.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

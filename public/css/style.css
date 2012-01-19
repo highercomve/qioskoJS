@@ -1,15 +1,14 @@
 @import url("http://fonts.googleapis.com/css?family=Wire+One|Terminal+Dosis+Light|Raleway:100|Vollkorn|Cuprum|Geo");
-/*
-@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis+Light);
-@import url(http://fonts.googleapis.com/css?family=Raleway:100);
-@import url(http://fonts.googleapis.com/css?family=Vollkorn);
-@import url(http://fonts.googleapis.com/css?family=Cuprum);
-*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+h1,h2,h3 {font-family: 'Cuprum', arial, serif;font-weight: 100;	}
+body{background-color:#555;}
 .topbar-inner{
 	background:none;
 	background-color: #333;
 	height:50px;
 }
+.topbar-inner .container{ width:auto;padding: 0 10px;}
 .topbar h3 a, .topbar .brand {
 	margin-top: -5px;
     padding: 0 20px 12px;
@@ -18,7 +17,7 @@
 #main_nav{ float:right; margin-top:0;height:50px}
 	#main_nav .nav {   margin:0;   padding:0;  height:50px;    list-style:none; width:100%;}
 	#main_nav .nav li {float:right; margin:0;}
-	#main_nav .nav li a{ border:#355a56 1px solid;   line-height:27px;   height:27px;    display:block;  background-color:#272a23;   color:#58b2b2; text-decoration:none; width:92px; text-align:center; font-family: 'Geo', arial, serif;   font-size:15px;     margin:0;  }
+	#main_nav .nav li a{ line-height:29px;   height:29px;    display:block;  background-color:#333;   color:#58b2b2; text-decoration:none; width:92px; text-align:center; font-family: 'Geo', arial, serif;   font-size:15px;     margin:0; }
 	#main_nav .nav li a:hover {background-color:#58b2b2;   color:#FFF; }
 /* Menu Principal */
 .img-noticias {	width:280px;}
@@ -91,7 +90,7 @@
 	margin-top:60px;
 }
 #content{
-	padding: 10px 20px;
+	padding: 10px 0;
 }
 #over {
 	display: none;
@@ -111,6 +110,9 @@
 	z-index:200;
 	display: none;
 }*/
+#float_detail{
+	width:940px;
+}
 .detail {
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -144,14 +146,17 @@
 }
 	.entries h3{
 		line-height:1.2em;
+		font-size:1.8em;
 	}
 
 .canal_title {
 	display: inline-block;
 	background: #101010;
 	line-height:2em;
-	font-size:20px;
+	font-size:16px;
 	padding: 0 20px;
+	text-transform:capitalize;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 .canal_title a{
 	color: #ddd;
