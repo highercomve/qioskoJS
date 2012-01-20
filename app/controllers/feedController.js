@@ -70,13 +70,16 @@ var feedController={
 		var renderizado=template.render(content);
 		$('#loading').hide();
 		$('#detail').html(renderizado);
-		$('#over').show();
-		$('.detail').slideDown('medium');
+		//$('html').css('overflow','visible');
+		$('#over').show(0,function (){
+			$('.detail').slideDown(800);
+		});
 		$('.detail').jScrollPane({autoReinitialise: true});
 		$('#over').click(function(){
 			setHashSilently(category);
 			$('.article').hide();
 			$('#over').hide();
+			//$('html').css('overflow-y','scroll');
 		});
 		window.___gcfg = {lang: 'es-419'};
 		addSocialScript(document,"script","twitter-wjs","http://platform.twitter.com/widgets.js");

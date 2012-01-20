@@ -20,11 +20,11 @@ $(document).ready(function(){
 	hasher.init(); //start listening for history change
 	var menu={enlaces:[
 			
-			{title:'Deportes',url:'#deportes'},
-			{title:'Internacionales',url:'#internacionales'},
-			{title:'Regionales',url:'#regionales'},
-			{title:'Tecnología',url:'#tecnologia'},
-			{title:'Venezuela',url:'#venezuela'}
+			{title:'Deportes',url:'#/deportes'},
+			{title:'Internacionales',url:'#/internacionales'},
+			{title:'Regionales',url:'#/regionales'},
+			{title:'Tecnología',url:'#/tecnologia'},
+			{title:'Venezuela',url:'#/venezuela'}
 	]};
 	try{
 		var template = new EJS({url:'app/views/menu.ejs'});
