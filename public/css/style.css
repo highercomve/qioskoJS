@@ -135,9 +135,12 @@ body{background-color:#555;}
 	background:#fff;
 	position:fixed;
 	height:100%;
-	top:0;
+	top:-100%;
 	z-index:300;
-	display: none;
+	-webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	-o-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
 }
 .detail_inner {
 	margin-top: 60px;
@@ -189,7 +192,11 @@ body{background-color:#555;}
     padding: 10px;
     position: fixed;
     right: 50%;
-    top: 50px;
+    top: -300px;
+    -webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	-o-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
     width: 65px;
     overflow: visible;
 }

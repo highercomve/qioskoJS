@@ -88,28 +88,22 @@ var feedController={
 		var renderizado=template.render(content);
 		$('#loading').hide();
 		$('#detail').html(renderizado);
-		//$('html').css('overflow','visible');
-		$('#over').show(0,function (){
-			$('.detail').slideDown(800);
-		});
 		$('.detail').jScrollPane({autoReinitialise: true});
+		$('#over').show(0,function(){
+			$('.detail').css('top','0');
+			$('.tools').css('top','50');
+		});
 		$('#over').click(function(){
 			setHashSilently(category);
-			$('.article').hide();
+			$('.detail').css('top','-100%');
+			$('.tools').css('top','-300px');
 			$('#over').hide();
-			//$('html').css('overflow-y','scroll');
 		});
 		window.___gcfg = {lang: 'es-419'};
 		addSocialScript(document,"script","twitter-wjs","http://platform.twitter.com/widgets.js");
 		addSocialScript(document,"script","facebook-wjs","http://connect.facebook.net/en_US/all.js#appId=224680044218666&amp;xfbml=1");
 		addSocialScript(document,"script","googleplus-wjs","https://apis.google.com/js/plusone.js");
 		
-		/*
-		(function() {
-		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		    po.src = 'http://connect.facebook.net/en_US/all.js#appId=224680044218666&amp;xfbml=1';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		})();*/
 		setTimeout(function(){
 			$('.googlemasuno').find('iframe').css({position:"relative",top:0,left:0});
 		},500);
