@@ -1,11 +1,17 @@
+
 EJS.Helpers.prototype.thumbnail=function(value){
 	var img='';
-	if(prueba=value.match(/src=\"(.*?)\"/)){
-		if(prueba2 = prueba[1].match(/youtube\.com\/(v|embed)\/(.*)\?*/)) {	
-			img = '';
-		} 	
-		else {
-			img =(prueba[1]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png') ? '':'<img src='+prueba[1]+' width="300"/>';}
+	if(match=value.match(/src=\"(.*?)\"/)){
+		for (var i=1,len=match.length;i<len;i++){
+			if(youtube=match[i].match(/youtube\.com\/(v|embed)\/(.*)\?*/) || match[i]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png'){
+				img='';	
+			}
+			else
+			{
+				img='<img src='+match[i]+' width="300"/>';
+				break;
+			}
+		}
 	}
 	return img;
 };
