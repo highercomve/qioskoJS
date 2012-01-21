@@ -4,28 +4,12 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"margin-left"
+				"len",
+				"len"
 			],
 			[
-				"pad",
-				"padding	padding: all"
-			],
-			[
-				"back",
-				"background	background-color: rgb"
-			],
-			[
-				"z",
-				"z	z-index: index"
-			],
-			[
-				"Uni",
-				"Universal"
-			],
-			[
-				"ti",
-				"title"
+				"margin-",
+				"margin-bottom"
 			],
 			[
 				"marin",
@@ -44,10 +28,6 @@
 				"console"
 			],
 			[
-				"len",
-				"length"
-			],
-			[
 				"ma",
 				"margin	margin: all"
 			],
@@ -58,6 +38,10 @@
 			[
 				"over",
 				"overflow	overflow: type"
+			],
+			[
+				"z",
+				"z-index"
 			],
 			[
 				"le",
@@ -132,10 +116,10 @@
 	"buffers":
 	[
 		{
-			"file": "public/css/style.css",
+			"file": "manifest.json",
 			"settings":
 			{
-				"buffer_size": 9555,
+				"buffer_size": 317,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,7 +127,7 @@
 			"file": "app/controllers/feedController.js",
 			"settings":
 			{
-				"buffer_size": 3342,
+				"buffer_size": 3235,
 				"line_ending": "Unix"
 			}
 		}
@@ -151,11 +135,11 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 467.0
+		"width": 0.0
 	},
 	"console":
 	{
@@ -172,20 +156,21 @@
 	},
 	"file_history":
 	[
-		"/home/sergio/Desktop/qioskoJS/index.html",
-		"/home/sergio/Desktop/qioskoJS/app/controllers/feedController.js",
-		"/home/sergio/Desktop/qioskoJS/qiosko.js",
-		"/home/sergio/Desktop/qioskoJS/app/views/detail.ejs",
-		"/home/sergio/Desktop/qioskoJS/public/css/style.css",
-		"/home/sergio/Desktop/qioskoJS/public/css/bootstrap.css",
-		"/home/sergio/Desktop/qioskoJS/app/models/feedModel.js",
+		"/home/sergio/Desktop/qioskoChrome/app/controllers/feedController.js",
+		"/home/sergio/Desktop/qioskoChrome/index.html",
+		"/home/sergio/Desktop/qioskoChrome/public/css/style.css",
+		"/home/sergio/Desktop/qioskoChrome/manifest.json",
+		"/home/sergio/Desktop/qioskoChrome/core/view.js",
+		"/home/sergio/Desktop/qioskoChrome/app/views/detail.ejs",
+		"/home/sergio/Desktop/qioskoChrome/app/views/feeds.ejs",
+		"/home/sergio/Desktop/qioskoChrome/qiosko.js",
+		"/home/sergio/Desktop/qioskoChrome/manifest.json~",
+		"/home/sergio/Desktop/qioskoChrome/app/models/feedModel.js",
 		"/home/sergio/Desktop/qiosko/app/controllers/feedController.js",
 		"/home/sergio/Desktop/qiosko/app/views/detail.ejs",
 		"/home/sergio/Desktop/qiosko/index.html",
 		"/home/sergio/Desktop/qiosko/public/css/style.css",
-		"/home/sergio/Desktop/qioskoChrome/index.html",
 		"/home/sergio/Desktop/qiosko/public/css/bootstrap.css",
-		"/home/sergio/Desktop/qioskoChrome/app/controllers/feedController.js",
 		"/home/sergio/Desktop/qiosko/qiosko.js",
 		"/home/sergio/Desktop/qiosko/app/models/feedModel.js",
 		"/home/sergio/Desktop/qiosko/app/views/menu.ejs",
@@ -217,8 +202,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"65px",
-			"content",
+			"height",
+			"console",
+			"='';",
+			"facebook",
 			"entries",
 			"jspVerticalBar",
 			"jspCap",
@@ -244,28 +231,30 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/css/style.css",
+					"file": "manifest.json",
 					"settings":
 					{
-						"buffer_size": 9555,
+						"buffer_size": 317,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								313,
+								313
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -278,15 +267,15 @@
 					"file": "app/controllers/feedController.js",
 					"settings":
 					{
-						"buffer_size": 3342,
+						"buffer_size": 3235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2148,
-								2148
+								208,
+								208
 							]
 						],
 						"settings":
@@ -294,8 +283,8 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 1224.0,
+						"translation.x": 24.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -354,7 +343,7 @@
 		[
 			[
 				"",
-				"/home/sergio/Desktop/qioskoChrome/untitled.sublime-project"
+				"/home/sergio/Desktop/qioskoJS/untitled.sublime-project"
 			]
 		],
 		"width": 380.0

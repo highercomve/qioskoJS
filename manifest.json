@@ -1,0 +1,14 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.html#venezuela"
+      }
+   },
+   "description": "Todos los portales de noticias venezolanos en una sola aplicaci\u00F3n",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "name": "Qiosko Venezuela App",
+   "version": "0.38"
+}

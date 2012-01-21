@@ -3,8 +3,8 @@ EJS.Helpers.prototype.thumbnail=function(value){
 	var img='';
 	if(match=value.match(/src=\"(.*?)\"/)){
 		for (var i=1,len=match.length;i<len;i++){
-			if(youtube=match[i].match(/youtube\.com\/(v|embed)\/(.*)\?*/) || match[i]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png' || macth[i]="http://eluniversal.com.feedsportal.com/c/33765/f/604545/s/1c056848/mf.gif"){
-				img='';	
+			if(match[i].match(/youtube\.com\/(v|embed)\/(.*)\?*/) || match[i].match(/mf\.gif/) || match[i]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png'){
+					img='';	
 			}
 			else
 			{
