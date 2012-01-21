@@ -11,13 +11,14 @@
 
 						<li>
 							<div class="entries" id="entrie_<%= i %>">
-							<h3>
-								<%= link_to(result[y].content.feed.entries[i].title,'#detail/'+category+'/'+y+'/'+i) %><br/>
-								<small><%= result[y].content.feed.entries[i].author %></small>
-							</h3>
-							<p>
-								<%= result[y].content.feed.entries[i].contentSnippet %>
-							</p>
+								<div class="thumbnail"><%= thumbnail(result[y].content.feed.entries[i].content) %></div>
+								<h3>
+									<%= link_to(result[y].content.feed.entries[i].title,'#detail/'+category+'/'+y+'/'+i) %><br/>
+									<small><%= result[y].content.feed.entries[i].author %></small>
+								</h3>
+								<p>
+									<%= result[y].content.feed.entries[i].contentSnippet %>
+								</p>
 							</div>
 						</li>
 					<% } %>

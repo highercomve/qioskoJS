@@ -1,3 +1,15 @@
+EJS.Helpers.prototype.thumbnail=function(value){
+	var img='';
+	if(prueba=value.match(/src=\"(.*?)\"/)){
+		if(prueba2 = prueba[1].match(/youtube\.com\/(v|embed)\/(.*)\?*/)) {	
+			img = '';
+		} 	
+		else {
+			img =(prueba[1]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png') ? '':'<img src='+prueba[1]+' width="300"/>';}
+	}
+	return img;
+};
+
 function addSocialScript(d,s,id,url){
 	var js,fjs=d.getElementsByTagName(s)[0];
 	if(!d.getElementById(id)){
@@ -40,8 +52,8 @@ var feedController={
 	renderCategory:function(result,cat){
 		$('#loading').hide();
 		var template = new EJS({url:'app/views/feeds.ejs'});
-		console.log('renderCategory');
-		console.log({category:cat,result:result});
+		//console.log('renderCategory');
+		//console.log({category:cat,result:result});
 		var renderizado=template.render({category:cat,result:result});
 		$('#content').append(renderizado);
 		for (var i = 0,len=result.length; i<len; i++) {
@@ -61,7 +73,7 @@ var feedController={
 		};
 
 		result=localStorage.getObject('feed_temp');
-		console.log(result[site].content.feed.entries[id]);
+		//console.log(result[site].content.feed.entries[id]);
 		content={
 			position:[site,id],
 			content:result[site].content.feed.entries[id]

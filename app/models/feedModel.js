@@ -153,7 +153,7 @@ function getFeed(url,cat_name,max,callback){
     rss.setNumEntries(max);
     rss.load(function(result){
     	if (!result.error) {
-    		console.log(result);
+    		//console.log(result);
 	    	try{
 	    		if(!localStorage.getObject('feed_temp'))
 				{
@@ -168,14 +168,14 @@ function getFeed(url,cat_name,max,callback){
 					temp.push({feed:result.feed.title,content:result});
 					localStorage.setObject('feed_temp',temp);
 				}
-				console.log(temp);
+				//console.log(temp);
 				feeds=new feedModel();
 				var category=feeds.readCategory(cat_name);
 				if(temp.length==category.values.length){
 					feedController.renderCategory(temp,cat_name);
 				}
 				else{
-					console.log('Error no mando ha hacer render '+temp.length+'<>'+category.values.length);
+					//console.log('Error no mando ha hacer render '+temp.length+'<>'+category.values.length);
 				}
 			}
 			catch(e) {
