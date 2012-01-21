@@ -155,8 +155,8 @@ body{background-color:#555;}
 	margin: 10px 0 0 0;
 }
 .detail_content p{
-	font-size:14px;
-}
+	font-size:13px;
+	line-height:1.5em;}
 .clearfix{
 	clear: both;
 }
