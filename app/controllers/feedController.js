@@ -1,9 +1,9 @@
-// Extension del helper de EJS para agregar una funcion que crea un thumbnail.
+
 EJS.Helpers.prototype.thumbnail=function(value){
 	var img='';
 	if(match=value.match(/src=\"(.*?)\"/)){
 		for (var i=1,len=match.length;i<len;i++){
-			if(youtube=match[i].match(/youtube\.com\/(v|embed)\/(.*)\?*/) || match[i]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png'){
+			if(youtube=match[i].match(/youtube\.com\/(v|embed)\/(.*)\?*/) || match[i]=='http://www.noticierodigital.com/cms/wp-content/plugins/sociable/images/facebook.png' || macth[i]="http://eluniversal.com.feedsportal.com/c/33765/f/604545/s/1c056848/mf.gif"){
 				img='';	
 			}
 			else
@@ -90,7 +90,7 @@ var feedController={
 		$('#detail').html(renderizado);
 		$('.detail').jScrollPane({autoReinitialise: true});
 		$('#over').show(0,function(){
-			$('.detail').css('top','0'); //cambios para realizar usando mostrar usando CSS3
+			$('.detail').css('top','0');
 			$('.tools').css('top','50');
 		});
 		$('#over').click(function(){

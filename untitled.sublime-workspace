@@ -131,15 +131,31 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/css/style.css",
+			"settings":
+			{
+				"buffer_size": 9555,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/feedController.js",
+			"settings":
+			{
+				"buffer_size": 3342,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -228,8 +244,62 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/css/style.css",
+					"settings":
+					{
+						"buffer_size": 9555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/feedController.js",
+					"settings":
+					{
+						"buffer_size": 3342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2148,
+								2148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
