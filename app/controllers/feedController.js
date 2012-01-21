@@ -1,4 +1,4 @@
-
+// Extension del helper de EJS para agregar una funcion que crea un thumbnail.
 EJS.Helpers.prototype.thumbnail=function(value){
 	var img='';
 	if(match=value.match(/src=\"(.*?)\"/)){
@@ -90,7 +90,7 @@ var feedController={
 		$('#detail').html(renderizado);
 		$('.detail').jScrollPane({autoReinitialise: true});
 		$('#over').show(0,function(){
-			$('.detail').css('top','0');
+			$('.detail').css('top','0'); //cambios para realizar usando mostrar usando CSS3
 			$('.tools').css('top','50');
 		});
 		$('#over').click(function(){
