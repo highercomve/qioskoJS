@@ -34,6 +34,8 @@ function addSocialScript(d,s,id,url){
 		fjs.parentNode.insertBefore(js,fjs);
 	}
 };
+//var currentfeed=0;
+//var categorylen=0;
 var feedController={
 	showCategory:function(name){
 		$('#loading').show();
@@ -48,9 +50,15 @@ var feedController={
 		feeds=new feedModel();
 		category=feeds.readCategory(name,false);
 		localStorage.removeItem('feed_temp');
-		var allfeeds={feed:new Array()};
+		/*
+		currentfeed=0;
+		categorylen=category.values.length;
+		console.log(category);
+		getFeed(category,name);
+		*/
+		
 		for (var i=0,len=category.values.length; i<len; i++) {
-			getFeed(category.values[i].url,name);
+			getFeedOnTemp(category.values[i].url,name);
 			//setTimeout(function(){},500);
 		};
 		
@@ -58,8 +66,6 @@ var feedController={
 	renderCategory:function(result,cat){
 		$('#loading').hide();
 		var template = new EJS({url:'app/views/feeds.ejs'});
-		//console.log('renderCategory');
-		//console.log({category:cat,result:result});
 		var renderizado=template.render({category:cat,result:result});
 		$('#content').append(renderizado);
 		for (var i = 0,len=result.length; i<len; i++) {
@@ -84,10 +90,16 @@ var feedController={
 			position:[site,id],
 			content:result[site].content.feed.entries[id]
 		};
-		var template = new EJS({url:'app/views/detail.ejs'});
-		var renderizado=template.render(content);
+		try{
+			var template = new EJS({url:'app/views/detail.ejs'});
+			var renderizado=template.render(content);	
+		}
+		catch(e){
+			console.log(e);
+		}
 		$('#loading').hide();
 		$('#detail').html(renderizado);
+		$('#detail a').attr('target','_blank');
 		$('.detail').jScrollPane({autoReinitialise: true});
 		$('#over').show(0,function(){
 			$('.detail').css('top','0');

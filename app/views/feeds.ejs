@@ -1,6 +1,4 @@
-<% console.log(result.length)%>
 <% for(var y=0,len1=result.length; y<len1; y++) {%>
-	<% console.log(result[y])%>
 	<div class="canal" id="canal_<%= y %>">	
 		<h2 class="canal_title"><%= link_to(result[y].content.feed.title, result[y].content.feed.link) %></h2>
 		<div id="canales_<%= y %>">

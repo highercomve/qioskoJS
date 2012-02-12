@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"cate",
+				"category"
+			],
+			[
+				"categ",
+				"categorylen"
+			],
+			[
 				"len",
 				"len"
 			],
@@ -115,14 +123,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "public/css/style.css",
-			"settings":
-			{
-				"buffer_size": 9574,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -148,6 +148,14 @@
 	},
 	"file_history":
 	[
+		"/home/sergio/Dropbox/web compartido/documentofacil/form tudocumento/untitled.sublime-project",
+		"/home/sergio/Desktop/qioskoJS/app/controllers/feedController.js",
+		"/home/sergio/Desktop/qioskoJS/app/models/feedModel.js",
+		"/home/sergio/Desktop/qioskoJS/app/views/menu.ejs",
+		"/home/sergio/Desktop/qioskoJS/app/views/feeds.ejs",
+		"/home/sergio/Desktop/qioskoJS/app/views/detail.ejs",
+		"/home/sergio/Desktop/qioskoJS/index.html",
+		"/home/sergio/Desktop/qioskoJS/public/css/style.css",
 		"/home/sergio/Desktop/qioskoChrome/index.html",
 		"/home/sergio/Desktop/qioskoChrome/manifest.json",
 		"/home/sergio/Desktop/qioskoChrome/app/controllers/feedController.js",
@@ -194,6 +202,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console",
+			"console.log",
 			"detail",
 			"detail_inner",
 			"height",
@@ -225,35 +235,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "public/css/style.css",
-					"settings":
-					{
-						"buffer_size": 9574,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5198,
-								5198
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2347.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

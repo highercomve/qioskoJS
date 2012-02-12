@@ -1,0 +1,8 @@
+Qiosko is a app for rss reading.
+
+Right now only read a preset list of RSS feeds, but the idea is to be able to manage that feed list to add more or delete. This is only a child!
+
+ToDo:
+
+Add manage system to add or delete feed for the local list.
+Add support to Google reader (login on your account and read yours RSS on Qiosko)
