@@ -1,6 +1,6 @@
 <% for(var y=0,len1=result.length; y<len1; y++) {%>
 	<div class="canal" id="canal_<%= y %>">	
-		<h2 class="canal_title"><%= link_to(result[y].content.feed.title, result[y].content.feed.link) %></h2>
+		<h2 class="canal_title"><a href="<%= result[y].content.feed.link %>" target="_blank"><%= result[y].content.feed.title %></a></h2>
 		<div id="canales_<%= y %>">
 			<div id="carousel_<%= y %>" class="es-carousel-wrapper">
 				<div class="es-carousel">
